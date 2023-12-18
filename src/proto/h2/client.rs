@@ -394,7 +394,7 @@ where
                         continue;
                     }
                     let (head, body) = req.into_parts();
-                    let mut req = ::http::Request::from_parts(head, ());
+                    let mut req = ::http::request::Request::from_parts(head, ());
                     super::strip_connection_headers(req.headers_mut(), true);
                     if let Some(len) = body.size_hint().exact() {
                         if len != 0 || headers::method_has_defined_payload_semantics(req.method()) {

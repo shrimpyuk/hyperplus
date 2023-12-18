@@ -14,7 +14,7 @@ use futures_channel::oneshot;
 use futures_core::Stream; // for mpsc::Receiver
 #[cfg(feature = "stream")]
 use futures_util::TryStreamExt;
-use http::HeaderMap;
+use http::header::map::HeaderMap;
 use http_body::{Body as HttpBody, SizeHint};
 
 use super::DecodedLength;
@@ -377,7 +377,7 @@ impl HttpBody for Body {
     fn poll_trailers(
         #[cfg_attr(not(feature = "http2"), allow(unused_mut))] mut self: Pin<&mut Self>,
         #[cfg_attr(not(feature = "http2"), allow(unused))] cx: &mut Context<'_>,
-    ) -> Poll<Result<Option<HeaderMap>, Self::Error>> {
+    ) -> Poll<Result<Option<http::header::map::HeaderMap>, Self::Error>> {
         match self.kind {
             #[cfg(all(feature = "http2", any(feature = "client", feature = "server")))]
             Kind::H2 {

@@ -161,7 +161,7 @@ impl UserBody {
     pub(crate) fn poll_trailers(
         &mut self,
         _cx: &mut Context<'_>,
-    ) -> Poll<crate::Result<Option<HeaderMap>>> {
+    ) -> Poll<crate::Result<Option<http::header::map::HeaderMap>>> {
         Poll::Ready(Ok(None))
     }
 }
