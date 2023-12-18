@@ -1,11 +1,11 @@
 [package]
-name = "hyper"
+name = "hyperplus"
 version = "0.14.28"
 description = "A fast and correct HTTP library."
 readme = "README.md"
 homepage = "https://hyper.rs"
 documentation = "https://docs.rs/hyper"
-repository = "https://github.com/hyperium/hyper"
+repository = "https://github.com/shrimpyuk/hyperplus"
 license = "MIT"
 authors = ["Sean McArthur <sean@seanmonstar.com>"]
 keywords = ["http", "hyper", "hyperium"]
