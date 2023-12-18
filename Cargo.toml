@@ -1,5 +1,5 @@
 [package]
-name = "hyperplus"
+name = "hyper"
 version = "0.14.28"
 description = "A fast and correct HTTP library."
 readme = "README.md"
