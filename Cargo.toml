@@ -24,7 +24,7 @@ bytes = "1"
 futures-core = { version = "0.3", default-features = false }
 futures-channel = "0.3"
 futures-util = { version = "0.3", default-features = false }
-http = { git = "https://github.com/ignassew/http-ordered" }
+http = "0.2.8"
 http-body = "0.4"
 httpdate = "1.0"
 httparse = "1.8"
