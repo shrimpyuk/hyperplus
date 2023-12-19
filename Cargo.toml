@@ -29,7 +29,7 @@ http-body = "0.4"
 httpdate = "1.0"
 httparse = "1.8"
 #h2 = { version = "0.3.14", git = "https://github.com/4JX/h2.git", branch = "imp", optional = true }
-h2 = { git = "https://github.com/shrimpyuk/h2plus.git", version="0.3.22", optional = true }
+h2 = { version="0.3.22", optional = true }
 itoa = "1"
 tracing = { version = "0.1", default-features = false, features = ["std"] }
 pin-project-lite = "0.2.4"
@@ -259,5 +259,4 @@ path = "tests/server.rs"
 required-features = ["full"]
 
 [patch.crates-io]
-h2 = { git = "https://github.com/shrimpyuk/h2plus.git" }
 http = { git = "https://github.com/shrimpyuk/http-ordered.git" }
